@@ -11,7 +11,7 @@
 ### 项目效果图 ###
 ![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/2.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/3.jpg)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
 ### 在线地址 ###
-（待补充）
+[线上地址（预览地址）](http://10.hhccyy196.applinzi.com)
 ### 说明 ###
  5. 项目内定死 账号: admin, 密码: admin。
  6. 因为数据原因，**首页**请求的数据接口来自**网页版今日头条**，修改了一些参数； **收藏** 页面数据由本地（static文件）获取。
