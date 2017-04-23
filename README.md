@@ -8,10 +8,10 @@
  2. axios、jsonp
  3. element-ui、iview
  4. vue-lazyload、animate.css、moment、flexible.js
-### 项目效果图 ###
-![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/2.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/3.jpg)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
 ### 在线地址 ###
 [线上地址（预览地址）](http://10.hhccyy196.applinzi.com)
+### 项目效果图 ###
+![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
 ### 说明 ###
  5. 项目内定死 账号: admin, 密码: admin。
  6. 因为数据原因，**首页**请求的数据接口来自**网页版今日头条**，修改了一些参数； **收藏** 页面数据由本地（static文件）获取。
@@ -25,3 +25,11 @@ npm run dev
 
 ### 感谢 ###
 如果您也是头条的重度用户，感觉项目对您有学习帮助，麻烦给个star吧，嘿嘿^_^
+
+----------
+**4-23 更新**
+
+ 1. 美化首页每条新闻的样式；
+ 2. 底部导航图标与文字调整；
+ 3. 修改detail页回到home页“点击加载更多”按钮消失的bug；
+
