@@ -20,7 +20,7 @@
     <el-alert v-show="!ifReturnMsg" class="newsLoadError" title="暂无更新..." type="error" description="此频道暂无更新，请先休息一下！" show-icon></el-alert>
     <transition enter-active-class="bounceInLeft" leave-active-class="bounceOutRight">
         <ul class="newsContent animated" v-show="!loading&&ifReturnMsg">
-            <router-link 
+            <router-link
                 :to="{
                     name:'newsdetail',
                     params:
@@ -35,9 +35,9 @@
                             comment_count:val.comment_count,
                             keywords:val.keywords
                         }
-                }" 
-                class="newsDetaile" 
-                v-for="(val,index) in listCon" 
+                }"
+                class="newsDetaile"
+                v-for="(val,index) in listCon"
                 :key="index"
             >
                 <p class="title">{{val.title}}</p>
@@ -104,6 +104,10 @@ export default {
             }
         },
     },
+    beforeRouteUpdate (to, from, next){
+        this.$store.commit(type.PULLDOWNBTN, false);
+        next();
+    },
     methods: {
         ...mapActions([
             'getNews',
@@ -135,7 +139,7 @@ export default {
             }
             this.first = window.location.search.substring(6);
             this.$store.commit(type.ROUTERCHANGE, true);
-            this.$store.commit(type.PULLDOWNBTN, false);
+            // this.$store.commit(type.PULLDOWNBTN, false);
         },
     },
     filters: {
@@ -258,6 +262,8 @@ export default {
         }
         .router-link-active {
             color: #d43d3d;
+            font-size: 17px;
+            font-weight: bold;
         }
     }
 }
@@ -266,7 +272,6 @@ export default {
 }
 .newsContent {
     margin-top: 2.3rem;
-    // margin-bottom: 1.5rem;
     width: 100%;
     .newsDetaile {
         width: 94%;
@@ -274,7 +279,7 @@ export default {
         position: relative;
         margin: 0 auto;
         padding-bottom: 0.15rem;
-        .borderBottom(1px,#d43d3d);
+        .borderBottom(1px,#ccc);
         .title {
             font-size: 16px;
             font-weight: bold;
@@ -290,10 +295,15 @@ export default {
         .bottomInfo {
             font-size: 10px;
             margin-top: 0.15rem;
-            .writer {}
-            .comment_count {}
+            .writer {
+                color: #000;
+            }
+            .comment_count {
+                color: #000;
+            }
             .datetime {
                 float: right;
+                color: #000;
             }
             .avIcon {
                 display: inline-block;
