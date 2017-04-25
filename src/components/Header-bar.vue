@@ -7,6 +7,7 @@
     <slot name="editprofile-header"></slot>
     <slot name="setup-header"></slot>
     <slot name="detail-header"></slot>
+    <slot name="search"></slot>
 </header>
 </template>
 

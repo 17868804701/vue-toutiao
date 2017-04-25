@@ -8,6 +8,11 @@
  2. axios、jsonp
  3. element-ui、iview
  4. vue-lazyload、animate.css、moment、flexible.js
+<<<<<<< 1fc1786c5eb3619f9d9c1beea30391189f36ea8b
+=======
+### 项目效果图 ###
+![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
+>>>>>>> 4-25更新--新新闻搜索功能
 ### 在线地址 ###
 [线上地址（预览地址）](http://10.hhccyy196.applinzi.com)
 ### 项目效果图 ###
@@ -33,3 +38,11 @@ npm run dev
  2. 底部导航图标与文字调整；
  3. 修改detail页回到home页“点击加载更多”按钮消失的bug；
 
+<<<<<<< 1fc1786c5eb3619f9d9c1beea30391189f36ea8b
+=======
+---
+**4-25 更新**
+
+ 1. 修改home页进入detail页滚动条不在顶部的bug
+ 2. 新增home页右上角“搜索”功能，可进行新闻搜索
+>>>>>>> 4-25更新--新新闻搜索功能

@@ -10,7 +10,7 @@
     <div class="container">
         <h2 class="detail-title">{{$route.params.title}}</h2>
         <div class="media_name">
-            <img :src="avatar_url" alt="" class="avatar_url">
+            <img src="../assets/imgs/head.jpg" height="360" width="360" alt="" class="avatar_url">
             <span class="name">{{media_name}}</span><br>
             <span class="date">{{datetime}}</span>
         </div>
@@ -71,13 +71,13 @@ export default {
             'Sharebox',
             'routerChange'
         ]),
-        avatar_url:function(){
-            if(this.media_info.avatar_url){
-                return this.media_info.avatar_url
-            }else{
-                return ''
-            }
-        },
+        // avatar_url:function(){
+        //     if(this.media_info.avatar_url){
+        //         return this.media_info.avatar_url
+        //     }else{
+        //         return ''
+        //     }
+        // },
         media_name:function(){
             if(this.$route.params.media_name){
                 return this.$route.params.media_name

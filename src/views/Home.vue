@@ -4,10 +4,13 @@
         <div slot="home" class="home-header-bar">
             <Icon type="ios-email" size="30" color="#fff" class="fl homeEmail"></Icon>
             <span class="logo">
-            今日头条
-            <Icon type="ios-refresh-empty" size="30"></Icon>
-          </span>
-            <Icon type="ios-search" size="30" color="#fff" class="fr homeSearch"></Icon>
+                今日头条
+                <Icon type="ios-refresh-empty" size="30"></Icon>
+            </span>
+            <router-link to="/search" class="search fr">
+                <Icon type="ios-search" size="30" color="#fff" class="homeSearch"></Icon>
+            </router-link>
+            
         </div>
     </headerBar>
     <Icon type="ios-refresh-empty" size="30" color="#d43d3d" class="pulldownbtn"></Icon>
@@ -21,6 +24,7 @@
     <transition enter-active-class="bounceInLeft" leave-active-class="bounceOutRight">
         <ul class="newsContent animated" v-show="!loading&&ifReturnMsg">
             <router-link
+                v-for="(val,index) in listCon"
                 :to="{
                     name:'newsdetail',
                     params:
@@ -37,7 +41,6 @@
                         }
                 }"
                 class="newsDetaile"
-                v-for="(val,index) in listCon"
                 :key="index"
             >
                 <p class="title">{{val.title}}</p>
@@ -234,9 +237,14 @@ export default {
     .homeEmail {
         margin-left: 0.22rem;
     }
-    .homeSearch {
-        margin-right: 0.22rem;
+    .search{
+        display: inline-block;
+       .homeSearch {
+            margin-right: 0.22rem;
+            margin-top: 0.2rem;
+        } 
     }
+    
 }
 .homeNav {
     width: 100%;

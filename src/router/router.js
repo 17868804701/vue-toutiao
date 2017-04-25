@@ -9,6 +9,7 @@ import Detail from '../views/Detail.vue'
 import Selfpage from '../views/Selfpage.vue'
 import Editprofile from '../views/Editprofile.vue'
 import Setup from '../views/Setup.vue'
+import Search from '../views/Search.vue'
 
 Vue.use(Router);
 
@@ -53,6 +54,11 @@ const routes = [{
         name: 'setup'
     },
     {
+        path: '/search',
+        component: Search,
+        name: 'search'
+    },
+    {
         path: '*',
         redirect: '/home/all?type=__all__'
     },
@@ -61,18 +67,18 @@ const routes = [{
         redirect: '/home/all?type=__all__'
     }
 ];
+const scrollBehavior = (to, from, savedPosition) => {
+    if(savedPosition){
+        return savedPosition
+    }else{
+        return { x: 0, y: 0 }
+    }
+}
 
 const router = new Router({
     mode: 'history',
-    routes
+    routes,
+    scrollBehavior
 })
-// router.beforeEach((to, from, next)=>{
-//     if(to.path == '/collect'){
-//         console.log(1);
-//         next()
-//     }else{
-//         next()
-//     }
-// })
 
 export default router
