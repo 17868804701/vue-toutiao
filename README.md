@@ -9,11 +9,9 @@
  3. element-ui、iview
  4. vue-lazyload、animate.css、moment、flexible.js
 
-### 项目效果图 ###
-![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
-
 ### 在线地址 ###
 [线上地址（预览地址）](http://10.hhccyy196.applinzi.com)
+
 ### 项目效果图 ###
 ![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
 ### 说明 ###
