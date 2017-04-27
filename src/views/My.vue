@@ -39,7 +39,7 @@
         系统设置
         <Icon type="ios-arrow-right" size="26" color="#ccc" class="fr toSetup"></Icon>
     </router-link>
-    <a class="tipItems" href="https://github.com/hcy1996/hcy1996.github.io" target=_blank>
+    <a class="tipItems" href="https://github.com/hcy1996/vue-toutiao" target=_blank>
     	Github项目地址
         <Icon type="ios-arrow-right" size="26" color="#ccc" class="fr toSetup"></Icon>
     </a>
