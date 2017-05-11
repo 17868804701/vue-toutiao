@@ -31,7 +31,7 @@
         <hr>
     </div>
     <comment :comment="comment_count"></comment>
-    <shareBox v-show="Sharebox"></shareBox>
+    <shareBox :show="Sharebox"></shareBox>
 </div>
 </template>
 <script>

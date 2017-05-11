@@ -1,17 +1,19 @@
 <template>
-<div id="share">
-    <ul>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-        <li class="shareItem"><a href="javascript:;"></a></li>
-    </ul>
-    <div class="quxiao" @click="hiddenShare">取消</div>
-</div>
+<transition name="slide">
+    <div id="share" v-show="show">
+        <ul>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+            <li class="shareItem"><a href="javascript:;"></a></li>
+        </ul>
+        <div class="quxiao" @click="hiddenShare">取消</div>
+    </div>
+</transition>
 </template>
 <script>
 import * as type from '../store/mutation-types.js'
@@ -28,6 +30,9 @@ export default {
         ...mapGetters([
             'Sharebox'
         ])
+    },
+    props:{
+        'show': Boolean
     }
 }
 </script>
@@ -70,5 +75,12 @@ export default {
     text-align: center;
     font-size: 18px;
     border-top: 1px solid #ccc;
+}
+.slide-enter-active, .slide-leave-active{
+    transition: all .6s ease;
+}
+.slide-enter, .slide-leave-active{
+    transform: translateY(230px);
+    opacity: 0;
 }
 </style>

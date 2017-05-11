@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <shareBox v-show="Sharebox"></shareBox>
+    <shareBox :show="Sharebox"></shareBox>
 </div>
 </template>
 <script>
