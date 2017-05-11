@@ -11,6 +11,7 @@
 
 ### 在线地址 ###
 [线上地址（预览地址）](https://hcy1996.github.io)
+
 ### 项目效果图 ###
 ![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/1.gif)![加载错误，请在src/static/screenshots中查看](./src/static/screenshots/4.jpg)
 ### 说明 ###
@@ -39,3 +40,8 @@ npm run dev
 
  1. 修改home页进入detail页滚动条不在顶部的bug
  2. 新增home页右上角“搜索”功能，可进行新闻搜索 
+ 
+ ---
+**5-11 更新**
+
+ 1. 增加分享框的动画效果 
